@@ -1,0 +1,128 @@
+-----------------------------------
+Test Scenarios:
+-----------------------------------
+
+
+User Authentication:
+
+Verify successful login with valid credentials.
+Verify error message for invalid login credentials.
+Verify successful logout.
+
+Product Browsing and Search Functionality:
+
+Verify product categories are displayed.
+Verify search functionality returns relevant results.
+Verify product details page displays correct information.
+
+Cart Functionality:
+
+Verify product can be added to the cart. - Done
+Verify quantity can be updated in the cart.
+Verify product can be removed from the cart.
+Verify cart can be cleared - Done
+
+Checkout Process:
+
+Verify user can proceed to checkout from the cart.
+Verify shipping address can be entered.
+Verify payment methods are available.
+Verify order summary is displayed correctly.
+
+Payment Processing:
+
+Verify payment can be successfully processed using different payment methods (e.g., credit card, PayPal).
+
+Order Confirmation:
+
+Verify order confirmation page is displayed after successful payment.
+Verify order details are correct on the confirmation page.
+
+-----------------------------------
+Test Cases:
+-----------------------------------
+
+
+Test Case 1: Login with valid credentials
+
+Precondition: User credentials are valid.
+Steps:
+Open the login page.
+Enter valid username and password.
+Click on the login button.
+Expected Result: User is logged in successfully.
+
+Test Case 2: Login with invalid credentials
+
+Precondition: User credentials are invalid.
+Steps:
+Open the login page.
+Enter invalid username and/or password.
+Click on the login button.
+Expected Result: Error message is displayed.
+
+Test Case 3: Add product to cart
+
+Precondition: User is logged in.
+Steps:
+Navigate to a product page.
+Click on the "Add to Cart" button.
+Expected Result: Product is added to the cart.
+
+Test Case 4: Remove product from cart
+
+Precondition: Cart is not empty.
+Steps:
+Open the cart page.
+Click on the "Remove" button for a product.
+Expected Result: Product is removed from the cart.
+
+Test Case 5: Proceed to checkout
+
+Precondition: Cart contains at least one product.
+Steps:
+Open the cart page.
+Click on the "Proceed to Checkout" button.
+Expected Result: User is directed to the checkout page.
+
+Test Case 6: Enter shipping address
+
+Precondition: User is on the checkout page.
+Steps:
+Enter valid shipping address details.
+Click on the "Continue" button.
+Expected Result: Shipping address is saved successfully.
+
+Test Case 7: Select payment method
+
+Precondition: User is on the payment page.
+Steps:
+Select a payment method (e.g., credit card).
+Enter valid payment details.
+Click on the "Pay Now" button.
+Expected Result: Payment is processed successfully.
+
+
+Test Case 8: Verify order confirmation
+
+Precondition: Payment is successful.
+Steps:
+Navigate to the order confirmation page.
+Expected Result: Order details are displayed correctly.
+
+Test Case 9: Search for a product
+
+Precondition: User is on the home page.
+Steps:
+Enter a search query in the search bar.
+Press Enter or click on the search button.
+Expected Result: Relevant products are displayed based on the search query.
+
+Test Case 10: Update quantity in the cart
+
+Precondition: Cart contains at least one product.
+Steps:
+Open the cart page.
+Change the quantity of a product.
+Click on the "Update" button.
+Expected Result: Quantity is updated successfully.
